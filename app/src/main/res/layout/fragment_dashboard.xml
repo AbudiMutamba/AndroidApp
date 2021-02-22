@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DashboardFragment"
+    android:background="@drawable/white_rectangle_background">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        android:id="@+id/layoutToper"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/header_background"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/line1"
+            >
+
+
+            <LinearLayout android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line1"
+                android:orientation="vertical"
+
+                android:gravity="center"
+                >
+
+                <LinearLayout
+                    android:id="@+id/headerInsideText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/userDetail"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:id="@+id/hello"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/colorWhite"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:text="Hello," />
+                    <TextView
+                        android:id="@+id/userName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/colorWhite"
+                        android:padding="5dp"
+                        android:textSize="14sp"
+                        android:text="User Name" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/headerInside"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_marginTop="5dp"
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/layoutUsers"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+
+                            android:layout_marginBottom="10dp"
+                            android:padding="5dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:background="@drawable/white_rectangle_background"
+
+                            app:layout_constraintDimensionRatio="H,1:1"
+                            app:layout_constraintEnd_toStartOf="@+id/layoutJobs"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <LinearLayout
+                                android:id="@+id/layoutAllUserValue"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_marginTop="-10dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="5dp" >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="232"
+                                    android:textColor="@color/black"
+                                    android:textSize="30sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Users"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"
+                                android:padding="1dp"
+                                android:textStyle="bold"
+                                />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/layoutJobs"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical"
+                            android:background="@drawable/white_rectangle_background"
+
+                            android:gravity="center"
+
+                            android:padding="5dp"
+                            app:layout_constraintDimensionRatio="H, 1:1"
+                            app:layout_constraintStart_toEndOf="@id/layoutUsers"
+                            app:layout_constraintEnd_toStartOf="@+id/layoutJobsPending"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <LinearLayout
+                                android:id="@+id/layoutJobsCompletedValue"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_marginTop="-10dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="5dp" >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="232"
+                                    android:textColor="@color/black"
+                                    android:textSize="30sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Jobs Completed"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp"
+                                    android:padding="1dp"
+                                    android:textStyle="bold"
+                                    />
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layoutJobsPending"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+
+                            android:layout_marginBottom="10dp"
+
+                            android:padding="5dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:background="@drawable/white_rectangle_background"
+
+
+                            app:layout_constraintDimensionRatio="H, 1:1"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/layoutJobs"
+                            app:layout_constraintTop_toTopOf="parent">
+
+
+
+                            <LinearLayout
+                                android:id="@+id/layoutJobsPendingValue"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_marginTop="-10dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="5dp" >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="232"
+                                    android:textColor="@color/black"
+                                    android:textSize="30sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Jobs Pending"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"
+                                android:padding="1dp"
+                                android:textStyle="bold"
+                                />
+
+
+
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/headerInsideTextBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/userDetail"
+                    android:orientation="horizontal"
+
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:id="@+id/sales"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/colorWhite"
+                        android:padding="5dp"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:text="20,000" />
+                    <TextView
+                        android:id="@+id/lastMonth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/colorWhite"
+                        android:padding="5dp"
+                        android:textSize="12sp"
+                        android:text="Last Month" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@+id/layoutToper"
+        android:id="@+id/headerInsideSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userDetail"
+        android:orientation="vertical"
+
+        android:layout_marginTop="5dp"
+        >
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:padding="15dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Search for a place" />
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@+id/headerInsideSearch"
+        android:id="@+id/headerInsideSearchButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userDetail"
+        android:orientation="horizontal"
+
+
+        android:layout_marginTop="5dp"
+        >
+        <Button android:id="@+id/btnSearch"
+            android:textColor="@color/colorWhite"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/btn_design"
+            android:text="Search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+        <Button android:id="@+id/btnCopy"
+            android:textColor="@color/colorWhite"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/btn_design"
+            android:text="Copy"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@+id/headerInsideSearch"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layoutbody"
+       >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins"
+            android:text="Location Cordinates"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

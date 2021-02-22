@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="">
+        <menu>
+            <item android:title="Dashboard"
+            android:icon="@drawable/ic_dashboard"
+                android:id="@+id/dashboard"/>
+
+            <item android:title="Users"
+                android:icon="@drawable/ic_users"
+                android:id="@+id/users"/>
+
+            <item android:title="Companies"
+                android:icon="@drawable/ic_companies"
+                android:id="@+id/companies"/>
+
+            <item android:title="Feedback"
+                android:icon="@drawable/ic_feedback"
+                android:id="@+id/feedback"/>
+
+            <item android:title="Subscriptions"
+                android:icon="@drawable/ic_special_collections"
+                android:id="@+id/subscription"/>
+
+            <item android:title="Special Subscriptions"
+                android:icon="@drawable/ic_special_collections"
+                android:id="@+id/special_subscriptions"/>
+
+            <item android:title="Promo Codes"
+                android:icon="@drawable/ic_promo_codes"
+                android:id="@+id/promo_codes"/>
+
+            <item android:title="Jobs"
+                android:icon="@drawable/ic_jobs"
+                android:id="@+id/jobs"/>
+
+            <item android:title="Send Messages"
+                android:icon="@drawable/ic_send_message"
+                android:id="@+id/send_message"/>
+
+            <item android:title="Transactions"
+                android:icon="@drawable/ic_transactions"
+                android:id="@+id/transactions"/>
+        </menu>
+    </item>
+
+    <item android:title="Account">
+        <menu>
+            <item android:title="Profile"
+                android:icon="@drawable/ic_user"
+                android:id="@+id/profile"/>
+
+            <item android:title="LogOut"
+                android:icon="@drawable/ic_logout"
+                android:id="@+id/logout"/>
+        </menu>
+    </item>
+</menu>
