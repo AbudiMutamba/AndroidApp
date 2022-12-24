@@ -1,5 +1,8 @@
 # Eazy Sacco Android App 
+Mobile application for Eazy-Sacco where users directly access system on android devices
+
 #CSC 1304 Practical Skills Development  - Makerere University
+
 Guildliness
 Students will be required to work in groups of upto five (5) members per project. The project should address a practical challenge and must involve some level computation and innovativeness. Below we provide a guide:
 
